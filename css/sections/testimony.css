@@ -1,0 +1,111 @@
+/* Sección Testimony */
+.testimony {
+    padding: 60px 0;
+    background-color: transparent;
+}
+
+.testimony__container {
+    overflow: visible;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.testimony__title {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-title);
+    text-align: left;
+    margin-bottom: 2rem;
+    opacity: 0.4;
+    z-index: 1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.testimony__title:hover {
+    opacity: 0.7;
+    transform: scale(1.04);
+    z-index: 10;
+}
+
+.testimony__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.testimony__card {
+    background-color: #fff;
+    border: 1px solid #e7edf3;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimony__card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.testimony__image {
+    width: 100%;
+    height: 200px;
+    border-radius: 6px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1rem;
+}
+
+.testimony__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.testimony__client-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-title);
+    margin-bottom: 0.25rem;
+}
+
+.testimony__client-feedback {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Media queries para testimony */
+@media (max-width: 768px) {
+    .testimony__title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .testimony__grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimony__title {
+        font-size: 2rem;
+    }
+    
+    .testimony__image {
+        height: 160px;
+    }
+    
+    .testimony__client-name {
+        font-size: 1.1rem;
+    }
+    
+    .testimony__client-feedback {
+        font-size: 0.9rem;
+    }
+}

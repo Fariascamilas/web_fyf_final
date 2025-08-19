@@ -1,0 +1,98 @@
+/* Estilos para el modal de visualización de proyectos */
+
+.project-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-modal__content {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    height: 85vh;
+    max-height: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.project-modal__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.project-modal__close:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.project-modal__image {
+    flex-grow: 1;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1a1a1a;
+}
+
+.project-modal__caption {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+
+/* Media queries para responsividad */
+@media screen and (max-width: 768px) {
+    .project-modal__content {
+        width: 95%;
+        height: 80vh;
+    }
+    
+    .project-modal__caption {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-modal__content {
+        width: 100%;
+        height: 75vh;
+        border-radius: 0;
+    }
+    
+    .project-modal__close {
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        width: 35px;
+        height: 35px;
+    }
+}

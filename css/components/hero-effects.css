@@ -1,0 +1,83 @@
+/* Efectos profesionales minimalistas para la sección Hero */
+
+/* Animación sutil para la barra debajo del título */
+.hero__title {
+    --underline-width: 80px;
+}
+
+.hero__title::after {
+    width: var(--underline-width);
+    transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.hero__title:hover::after {
+    width: 120px;
+}
+
+/* Efecto de texto refinado */
+.hero__text {
+    position: relative;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Partículas minimalistas */
+.hero__particles div {
+    transition: opacity 0.5s ease;
+}
+
+.hero__particles div:hover {
+    opacity: 0.4 !important;
+}
+
+/* Efectos de cursor de typing */
+.hero__cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background-color: white;
+    margin-left: 2px;
+    vertical-align: text-bottom;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Líneas decorativas minimalistas */
+.hero__content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.hero__content::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Refinamiento responsive */
+@media screen and (max-width: 768px) {
+    .hero__content::before,
+    .hero__content::after {
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero__content::before,
+    .hero__content::after {
+        width: 20px;
+    }
+}

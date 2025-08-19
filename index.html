@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>F&F Consultores</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/LogoPrincipal2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+
+    <!-- Fuentes y Tailwind (solo carga de estilos, sin clases inline) -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link as="style" rel="stylesheet" onload="this.rel='stylesheet'"
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Noto+Sans:wght@400;500;700;900&display=swap">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <meta name="theme-color" content="#2091f9">
+
+
+    <!-- Primary Meta Tags -->
+
+    <meta name="title" content="F&F Consultores - Consultoría y Asesoramiento Profesional" />
+    <meta name="description" content="F&F Consultores es tu aliado estratégico en consultoría, asesoramiento técnico-legal y soluciones integrales en gestión de obras y seguridad ocupacional." />
+    <meta name="keywords" content="consultoría, asesoramiento profesional, gestión de obras, seguridad ocupacional, asesoría técnico-legal, F&F Consultores" />
+
+</head>
+
+<body class="body">
+        <!-- Header -->
+    <header class="header">
+        <div class="header__icon_and_tittle">
+            <h2 class="header__tittle">F&F Consultores Asociados</h2>
+        </div>
+        <!-- Navegación para escritorio (>=768px) -->
+        <div class="header__nav desktop-nav">
+            <div class="header__nav__sec">
+                <a href="#inicio" class="header__text">Inicio</a>
+                <a href="#servicios" class="header__text">Servicios</a>
+                <a href="#proyectos" class="header__text">Proyectos</a>
+                <a href="#testimonios" class="header__text">Testimonios</a>
+            </div>
+            <a href="#contacto" class="header__button">
+                <span class="truncate">Contactanos</span>
+            </a>
+        </div>
+
+        <div class="mobile-nav">
+            <img src="./images/menu.svg" alt="Menú" class="nav__menu" />
+        </div>
+        <nav class="nav__link">
+            <img src="./images/close.svg" alt="Cerrar" class="nav__close" />
+            <a href="#inicio" class="header__text">Inicio</a>
+            <a href="#servicios" class="header__text">Servicios</a>
+            <a href="#proyectos" class="header__text">Proyectos</a>
+            <a href="#testimonios" class="header__text">Testimonios</a>
+            <a href="#contacto" class="header__button-nav">
+                <span>Contactanos</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Se renombra la clase de @container a .tw-container para evitar errores -->
+        <section id="inicio" class="hero">
+            <div class="hero__container">
+                <div class="hero__img">
+                    <div class="hero__circle">
+                        <img src="./images/LogoPrincipal2.png" alt="Logo" class="hero__logo" />
+                    </div>
+                    <div class="hero__content">
+                        <h1 class="hero__title">Tu Aliado Estratégico en Seguridad y Eficiencia 🚀</h1>
+                        <p class="hero__text">Impulsamos el crecimiento de tu empresa reduciendo la siniestralidad y optimizando procesos. Prevenimos incidentes que afectan la producción y capacitamos a tu equipo para garantizar un entorno seguro, eficiente y saludable. ¡Confía en nosotros para proteger lo más importante!</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="floating-circle" id="floatingCircle">
+            <img src="./images/LogoPrincipal2.png" alt="Logo F&F" class="floating-logo"/>
+        </section>
+
+        <section id="servicios" class="about">
+            <div class="container">
+                <!-- Título de servicios mejorado con contador numérico simplificado -->
+                <div class="about__title-container">
+                    <div class="about__services-count">
+                        <!-- El contenido se generará mediante JavaScript -->
+                    </div>
+                    <h3 class="about__title">Soluciones Integrales para su Empresa</h3>
+                    <p class="about__description-main">
+                        Nuestro equipo de expertos brinda soluciones personalizadas en seguridad, ambiente y gestión, 
+                        maximizando el rendimiento y garantizando o cumplimiento normativo de su organización.
+                    </p>
+                </div>
+                
+                <div class="about__grid">
+
+                <article class="about__card">
+                    <div class="about__more">
+                        <span>+</span>
+                    </div>
+                    <svg class="about__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M15.794 11.09c.332-.263.648-.542.947-.84l.136-.142c.283-.293.552-.598.801-.919l.062-.075c.255-.335.486-.688.702-1.049l.128-.22c.205-.364.395-.737.559-1.123.02-.047.035-.095.055-.142.147-.361.274-.731.383-1.109.021-.07.044-.14.063-.211.107-.402.189-.813.251-1.229.013-.087.021-.175.032-.263.051-.432.087-.869.087-1.311V2h-2v.457c0 .184-.031.361-.042.543H6.022C6.012 2.819 6 2.64 6 2.457V2H4v.457c0 4.876 3.269 9.218 7.952 10.569l.028.009c2.881.823 5.056 3.146 5.769 5.965H6.251l.799-2h7.607a7.416 7.416 0 0 0-2.063-2h-4c.445-.424.956-.774 1.491-1.09a9.922 9.922 0 0 1-2.08-1.014C5.55 14.812 4 17.779 4 21.015V23h2v-1.985L6.001 21h11.998l.001.015V23h2v-1.985c0-3.83-2.159-7.303-5.443-9.07a11.1 11.1 0 0 0 1.072-.729c.055-.042.11-.082.165-.126zm-1.19-1.604a8.945 8.945 0 0 1-2.325 1.348c-.092.036-.185.068-.278.102A8.95 8.95 0 0 1 8.836 9h6.292c-.171.161-.332.333-.517.48l-.007.006zM17.619 5c-.005.016-.007.033-.012.049l-.044.151a9.089 9.089 0 0 1-.513 1.252c-.096.19-.213.365-.321.548h-9.48a9.066 9.066 0 0 1-.871-2h11.241z"></path>
+                    </svg>
+                    <h3 class="about__card-title">Seguridad e Higiene</h3>
+                    <p class="about__description">Implementamos medidas preventivas para garantizar un entorno de trabajo seguro, minimizando riesgos y cumpliendo con normativas vigentes.</p>
+
+                    <!-- Estructura del Modal -->
+                    <div class="modal-overlay">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal__icon_and_title">
+                                    <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M15.794 11.09c.332-.263.648-.542.947-.84l.136-.142c.283-.293.552-.598.801-.919l.062-.075c.255-.335.486-.688.702-1.049l.128-.22c.205-.364.395-.737.559-1.123.02-.047.035-.095.055-.142.147-.361.274-.731.383-1.109.021-.07.044-.14.063-.211.107-.402.189-.813.251-1.229.013-.087.021-.175.032-.263.051-.432.087-.869.087-1.311V2h-2v.457c0 .184-.031.361-.042.543H6.022C6.012 2.819 6 2.64 6 2.457V2H4v.457c0 4.876 3.269 9.218 7.952 10.569l.028.009c2.881.823 5.056 3.146 5.769 5.965H6.251l.799-2h7.607a7.416 7.416 0 0 0-2.063-2h-4c.445-.424.956-.774 1.491-1.09a9.922 9.922 0 0 1-2.08-1.014C5.55 14.812 4 17.779 4 21.015V23h2v-1.985L6.001 21h11.998l.001.015V23h2v-1.985c0-3.83-2.159-7.303-5.443-9.07a11.1 11.1 0 0 0 1.072-.729c.055-.042.11-.082.165-.126zm-1.19-1.604a8.945 8.945 0 0 1-2.325 1.348c-.092.036-.185.068-.278.102A8.95 8.95 0 0 1 8.836 9h6.292c-.171.161-.332.333-.517.48l-.007.006zM17.619 5c-.005.016-.007.033-.012.049l-.044.151a9.089 9.089 0 0 1-.513 1.252c-.096.19-.213.365-.321.548h-9.48a9.066 9.066 0 0 1-.871-2h11.241z"></path>
+                                    </svg>
+                                    <h3 class="modal__header-title">Seguridad e Higiene</h3>
+                                </div>
+                                        
+                                <div class="modal__header-bottoms">
+                                    <a href="#contacto">
+                                        <span class="modal-contact">Contactanos</span>
+                                    </a>
+                                    <span class="modal-close">Salir</span>
+                                </div> 
+                            </div>
+                            <div class="modal-main">
+
+                                <div class="modal-header-main">
+                                    <h2 class="modal-title">Auditoría y Evaluación Inicial</h2>
+                                    <p class="modal-paragrath">
+                                        Antes de comenzar, realizamos una auditoría general para evaluar el estado de la empresa en relación con la legislación vigente según su rubro. A partir de este diagnóstico, ofrecemos los siguientes servicios:
+                                    </p>
+                                </div>
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                                            <path d="M3 2h2v20H3zm7 4h7v2h-7zm0 4h7v2h-7z"></path><path d="M19 2H6v20h13c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 18H8V4h11v16z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Informes y Documentación</h3>
+                                        <p class="modal-text">
+                                            Elaboración de informes personalizados según los requerimientos de la empresa.
+                                        </p>
+                                        <p class="modal-text">
+                                            Presentación de formularios obligatorios (RGRL, RAR) ante los organismos correspondientes.
+                                        </p>
+                                        <p class="modal-text">
+                                            Asesoramiento legal y actualización de la matriz legal en Higiene y Seguridad.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                                            <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8 0-1.168.258-2.275.709-3.276.154.09.308.182.456.276.396.25.791.5 1.286.688.494.187 1.088.312 1.879.312.792 0 1.386-.125 1.881-.313s.891-.437 1.287-.687.792-.5 1.287-.688c.494-.187 1.088-.312 1.88-.312s1.386.125 1.88.313c.495.187.891.437 1.287.687s.792.5 1.287.688c.178.067.374.122.581.171.191.682.3 1.398.3 2.141 0 4.411-3.589 8-8 8z"></path><circle cx="8.5" cy="12.5" r="1.5"></circle><circle cx="15.5" cy="12.5" r="1.5"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Capacitación y Formación</h3>
+                                        <p class="modal-text">
+                                            Plan anual de capacitación y su implementación.
+                                        </p>
+                                        <p class="modal-text">
+                                            Cursos específicos con material multimedia (PPT y videos).
+                                        </p>
+                                        <p class="modal-text">
+                                            Reuniones de seguridad con supervisores y comités internos para mejora continua.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                                            <path d="M11.001 10h2v5h-2zM11 16h2v2h-2z"></path><path d="M13.768 4.2C13.42 3.545 12.742 3.138 12 3.138s-1.42.407-1.768 1.063L2.894 18.064a1.986 1.986 0 0 0 .054 1.968A1.984 1.984 0 0 0 4.661 21h14.678c.708 0 1.349-.362 1.714-.968a1.989 1.989 0 0 0 .054-1.968L13.768 4.2zM4.661 19 12 5.137 19.344 19H4.661z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Inspecciones y Gestión de Riesgos</h3>
+                                        <p class="modal-text">
+                                            Relevamiento general de instalaciones y detección de anomalías.
+                                        </p>
+                                        <p class="modal-text">
+                                            Creación de matriz de riesgos laborales y análisis de trabajo seguro.
+                                        </p>
+                                        <p class="modal-text">
+                                            Elaboración del Manual de Higiene y Seguridad Ocupacional y procedimientos operativos.
+                                        </p>
+                                        <p class="modal-text">
+                                            Seguimiento del Programa de Reducción de Siniestros según requerimientos de la ART.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                                            <path d="M3 20h18a1 1 0 0 0 .864-1.504l-7-12c-.359-.615-1.369-.613-1.729 0L9.866 12.1l-1.02-1.632A.998.998 0 0 0 8 10h-.001a1 1 0 0 0-.847.47l-5 8A1 1 0 0 0 3 20zM14 8.985 19.259 18h-5.704l-2.486-3.987L14 8.985zm-5.999 3.9L11.197 18H4.805l3.196-5.115zM6 8c1.654 0 3-1.346 3-3S7.654 2 6 2 3 3.346 3 5s1.346 3 3 3zm0-4a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Seguridad, Salud y Medio Ambiente</h3>
+                                        <p class="modal-text">
+                                            Desarrollo de políticas de Alcohol y Drogas, Seguridad y Medio Ambiente.
+                                        </p>
+                                        <p class="modal-text">
+                                            Mediciones anuales de iluminación, ruido y puesta a tierra (Ley 19587 y Decreto 351/79).
+                                        </p>
+                                        <p class="modal-text">
+                                            Estudios ergonómicos para optimizar los puestos de trabajo.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                                            <path d="M21 6h-2V3h-2v3H7V3H5v3H3a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h2v6h2v-6h10v6h2v-6h2a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1zM4.42 13l2.857-5H9.58l-2.857 5H4.42zm7.857-5h2.303l-2.857 5H9.42l2.857-5zm5 0h2.303l-2.857 5H14.42l2.857-5z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Emergencias y Prevención</h3>
+                                        <p class="modal-text">
+                                            Plan de emergencias y evacuación.
+                                        </p>
+                                        <p class="modal-text">
+                                            Registro y control de extintores portátiles.
+                                        </p>
+                                        <p class="modal-text">
+                                            Habilitación de empresas y locales bailables en municipios.
+                                        </p>
+                                        <p class="modal-text">
+                                            Simulacros y teoría de incendios.
+                                        </p>
+                                        <p class="modal-text">
+                                            Gestión de sistema SAP según Ley 5920 CABA.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                                            <path d="M5 22h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2h-2a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1H5c-1.103 0-2 .897-2 2v15c0 1.103.897 2 2 2zM5 5h2v2h10V5h2v15H5V5z"></path><path d="m11 13.586-1.793-1.793-1.414 1.414L11 16.414l5.207-5.207-1.414-1.414z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Atención and Cumplimiento Normativo</h3>
+                                        <p class="modal-text">
+                                            Asesoramiento en inspecciones del Ministerio de Trabajo, ART, Municipios y MAPBA.
+                                        </p>
+                                        <p class="modal-text">
+                                            Interacción con Médico Laboral, Departamento Legal y RRHH.
+                                        </p>
+                                        <p class="modal-text">
+                                            Registro de mantenimiento de autoelevadores y maquinarias (Res. SRT 960/2015).
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="about__card">
+                    <div class="about__more">
+                        <span>+</span>
+                    </div>
+                    <svg class="about__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="m21.88 2.15-1.2.4a13.84 13.84 0 0 1-6.41.64 11.87 11.87 0 0 0-6.68.9A7.23 7.23 0 0 0 3.3 9.5a8.65 8.65 0 0 0 1.47 6.6c-.06.21-.12.42-.17.63A22.6 22.6 0 0 0 4 22h2a30.69 30.69 0 0 1 .59-4.32 9.25 9.25 0 0 0 4.52 1.11 11 11 0 0 0 4.28-.87C23 14.67 22 3.86 22 3.41zm-7.27 13.93c-2.61 1.11-5.73.92-7.48-.45a13.79 13.79 0 0 1 1.21-2.84A10.17 10.17 0 0 1 9.73 11a9 9 0 0 1 1.81-1.42A12 12 0 0 1 16 8V7a11.43 11.43 0 0 0-5.26 1.08 10.28 10.28 0 0 0-4.12 3.65 15.07 15.07 0 0 0-1 1.87 7 7 0 0 1-.38-3.73 5.24 5.24 0 0 1 3.14-4 8.93 8.93 0 0 1 3.82-.84c.62 0 1.23.06 1.87.11a16.2 16.2 0 0 0 6-.35C20 7.55 19.5 14 14.61 16.08z"></path>
+                    </svg>
+                    <h3 class="about__card-title">Control Ambiental</h3>
+                    <p class="about__description">Monitoreamos el impacto ambiental de las operaciones, asegurando el cumplimiento de regulaciones y promoviendo prácticas sostenibles.</p>
+
+                    <!-- Estructura del Modal -->
+                    <div class="modal-overlay">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal__icon_and_title">
+                                <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <path d="m21.88 2.15-1.2.4a13.84 13.84 0 0 1-6.41.64 11.87 11.87 0 0 0-6.68.9A7.23 7.23 0 0 0 3.3 9.5a8.65 8.65 0 0 0 1.47 6.6c-.06.21-.12.42-.17.63A22.6 22.6 0 0 0 4 22h2a30.69 30.69 0 0 1 .59-4.32 9.25 9.25 0 0 0 4.52 1.11 11 11 0 0 0 4.28-.87C23 14.67 22 3.86 22 3.41zm-7.27 13.93c-2.61 1.11-5.73.92-7.48-.45a13.79 13.79 0 0 1 1.21-2.84A10.17 10.17 0 0 1 9.73 11a9 9 0 0 1 1.81-1.42A12 12 0 0 1 16 8V7a11.43 11.43 0 0 0-5.26 1.08 10.28 10.28 0 0 0-4.12 3.65 15.07 15.07 0 0 0-1 1.87 7 7 0 0 1-.38-3.73 5.24 5.24 0 0 1 3.14-4 8.93 8.93 0 0 1 3.82-.84c.62 0 1.23.06 1.87.11a16.2 16.2 0 0 0 6-.35C20 7.55 19.5 14 14.61 16.08z"></path>
+                                </svg>
+                                <h3 class="modal__header-title">Control Ambiental Laboral</h3>
+                            </div>
+                                    
+                            <div class="modal__header-bottoms">
+                                <a href="#contacto">
+                                    <span class="modal-contact">Contactanos</span>
+                                </a>
+                                <span class="modal-close">Salir</span>
+                            </div> 
+                        </div>
+                        <div class="modal-main">
+
+                            <div class="modal-header-main">
+                                <h2 class="modal-title">Auditoría y Evaluación Ambiental</h2>
+                                <p class="modal-paragrath">
+                                    En primera instancia, realizamos una auditoría ambiental para evaluar el estado de la empresa en relación con la normativa vigente. Luego, gestionamos la adecuación de la empresa según los requisitos de los entes reguladores, como MAPBA, ACUMAR, APRA o entidades municipales según ordenanzas y decretos.
+                                </p>
+                            </div>
+
+                            <div class="modal-block">
+                                <div class="modal-block-svg">
+                                    <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                                        <path d="M6 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6H6zm7 1.5L18.5 9H13V3.5zM8 11h8v2H8v-2zm0 4h6v2H8v-2z"/>
+                                    </svg>
+                                </div>
+                                <div class="modal-block-content">
+                                    <h3 class="modal-subtitle">Documentación y Gestión Ambiental</h3>
+                                    <p class="modal-text">
+                                        Creación del Manual Ambiental adaptado a la actividad de la empresa
+                                    </p>
+                                    <p class="modal-text">
+                                        Desarrollo de la matriz de riesgos, aspectos e impactos ambientales.
+                                    </p>
+                                    <p class="modal-text">
+                                        Elaboración del sistema de gestión de residuos conforme a la normativa vigente.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="modal-block">
+                                <div class="modal-block-svg">
+                                    <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                                        <path d="M12 2L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-3zm0 2.18L18 6v5.8c0 4.44-2.97 8.61-6 9.82-3.03-1.21-6-5.38-6-9.82V6l6-1.82zM11 8h2v4h-2V8zm0 6h2v2h-2v-2z"/>
+                                    </svg>
+                                </div>
+                                <div class="modal-block-content">
+                                    <h3 class="modal-subtitle">Prevención y Control</h3>
+                                    <p class="modal-text">
+                                        Implementación del plan de contingencias ambientales para mitigar riesgos.
+                                    </p>
+                                    <p class="modal-text">
+                                        Mediciones ambientales generales según los requerimientos normativos.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="modal-block">
+                                <div class="modal-block-svg">
+                                    <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                                        <path d="M6.01 2c-1.93 0-3.5 1.57-3.5 3.5 0 1.58 1.06 2.903 2.5 3.337v7.16c-.001.179.027 1.781 1.174 2.931C6.892 19.64 7.84 20 9 20v2l4-3-4-3v2c-1.823 0-1.984-1.534-1.99-2V8.837c1.44-.434 2.5-1.757 2.5-3.337 0-1.93-1.571-3.5-3.5-3.5zm0 5c-.827 0-1.5-.673-1.5-1.5S5.183 4 6.01 4s1.5.673 1.5 1.5S6.837 7 6.01 7zm13 8.163V7.997C19.005 6.391 17.933 4 15 4V2l-4 3 4 3V6c1.829 0 2.001 1.539 2.01 2v7.163c-1.44.434-2.5 1.757-2.5 3.337 0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5c0-1.58-1.06-2.903-2.5-3.337zm-1 4.837c-.827 0-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5 1.5.673 1.5 1.5-.673 1.5-1.5 1.5z"></path>
+                                    </svg>
+                                </div>
+                                <div class="modal-block-content">
+                                    <h3 class="modal-subtitle">Mejora Continua</h3>
+                                    <p class="modal-text">
+                                        Evaluación y actualización periódica de procedimientos y normas de trabajo.
+                                    </p>
+                                    <p class="modal-text">
+                                        Desarrollo e implementación de nuevas actividades en común acuerdo con el cliente.
+                                    </p>
+                                </div>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="about__card">
+                    <div class="about__more">
+                        <span>+</span>
+                    </div>
+                    <svg class="about__icon" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                        <path d="M80-80v-481l280-119v80l200-80.67V-560h320v480H80Zm66.67-66.67h666.66V-493.2h-320V-582l-200 80v-78.67l-146.66 65v369Zm300-93.33h66.66v-160h-66.66v160Zm-160 0h66.66v-160h-66.66v160Zm320 0h66.66v-160h-66.66v160ZM880-560H693.33l40-320H840l40 320ZM146.67-146.67h666.66-666.66Z"/>
+                    </svg>
+                    <h3 class="about__card-title">Obras, Montajes y Paradas</h3>
+                    <p class="about__description">Coordinamos y ejecutamos proyectos industriales, optimizando tiempos y recursos para garantizar eficiencia y seguridad.</p>
+
+                    <div class="modal-overlay">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal__icon_and_title">
+                                    <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                                        <path d="M80-80v-481l280-119v80l200-80.67V-560h320v480H80Zm66.67-66.67h666.66V-493.2h-320V-582l-200 80v-78.67l-146.66 65v369Zm300-93.33h66.66v-160h-66.66v160Zm-160 0h66.66v-160h-66.66v160Zm320 0h66.66v-160h-66.66v160ZM880-560H693.33l40-320H840l40 320ZM146.67-146.67h666.66-666.66Z"/>
+                                    </svg>
+                                    <h3 class="modal__header-title">Supervisión de Obras Civiles, Montajes Industriales y Paradas de Planta Programadas</h3>
+                                </div>
+                                        
+                                <div class="modal__header-bottoms">
+                                    <a href="#contacto">
+                                        <span class="modal-contact">Contactanos</span>
+                                    </a>
+                                    <span class="modal-close">Salir</span>
+                                </div> 
+                            </div>
+                            <div class="modal-main">
+
+                                <div class="modal-header-main">
+                                    <h2 class="modal-title">Gestión de Obras, Montajes Industriales y Paradas de Planta</h2>
+                                    <p class="modal-paragrath">
+                                        Brindamos un servicio integral en obras civiles, montajes industriales y paradas de plantas programadas, asegurando el cumplimiento de normativas vigentes y la seguridad de los trabajadores..
+                                    </p>
+                                </div>
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                                            <path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Asesoramiento Técnico y Legal</h3>
+                                        <p class="modal-text">
+                                            Provisión de un Técnico Superior en Higiene y Seguridad para la obra, con funciones de asesoramiento y representación ante autoridades, ART, clientes y proveedores.
+                                        </p>
+                                        <p class="modal-text">
+                                            Cumplimiento de normativas como Resolución SRT 550/11 (excavaciones y demoliciones), 503/14 (excavaciones menores a 1,20m), 61/23 (trabajos en altura) y Decreto 911/96.
+                                        </p>
+                                        <p class="modal-text">
+                                            Coordinación con supervisores, capataces, contratistas y empresas asociadas.
+                                        </p>
+                                        <p class="modal-text">
+                                            Asesoramiento técnico-legal en pericias, juicios laborales, contestación de demandas e intimaciones.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                                            <path d="M480-320q102-92 131-129.5t29-74.5q0-36-26-62t-62-26q-21 0-40.5 8.5T480-580q-12-15-31-23.5t-41-8.5q-36 0-62 26t-26 62q0 19 5 35t22 37.5q17 21.5 48.5 52.5t84.5 79Zm0 240q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q104-33 172-132t68-220v-189l-240-90-240 90v189q0 121 68 220t172 132Zm0-316Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Seguridad y Salud Ocupacional en Obras</h3>
+                                        <p class="modal-text">
+                                            Supervisión y control del cumplimiento de normas de seguridad en obra.
+                                        </p>
+                                        <p class="modal-text">
+                                            Auditorías permanentes para garantizar condiciones seguras de trabajo.
+                                        </p>
+                                        <p class="modal-text">
+                                            Asistencia en la confección de Avisos de Obra, Programas de Seguridad y Legajo Técnico.
+                                        </p>
+                                        <p class="modal-text">
+                                            Control de documentación de subcontratistas y cumplimiento normativo (Res. SRT 35/98, 51/97, 319/99 y 231/96).
+                                        </p>
+                                        <p class="modal-text">
+                                            Registro de mediciones ambientales (ruido, calidad del aire, análisis de efluentes) conforme al Decreto 911/96.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                                            <path d="M480-280q15 0 25.83-10.83 10.84-10.84 10.84-25.84t-10.84-25.83Q495-353.33 480-353.33q-15 0-25.83 10.83-10.84 10.83-10.84 25.83 0 15 10.84 25.84Q465-280 480-280Zm-34-141.33h66.67V-680H446v258.67ZM186.67-120q-27.5 0-47.09-19.58Q120-159.17 120-186.67v-586.66q0-27.5 19.58-47.09Q159.17-840 186.67-840h192.66q7.67-35.33 35.84-57.67Q443.33-920 480-920t64.83 22.33Q573-875.33 580.67-840h192.66q27.5 0 47.09 19.58Q840-800.83 840-773.33v586.66q0 27.5-19.58 47.09Q800.83-120 773.33-120H186.67Zm0-66.67h586.66v-586.66H186.67v586.66Zm293.33-608q13.67 0 23.5-9.83t9.83-23.5q0-13.67-9.83-23.5t-23.5-9.83q-13.67 0-23.5 9.83t-9.83 23.5q0 13.67 9.83 23.5t23.5 9.83Zm-293.33 608v-586.66 586.66Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Gestión de Emergencias y Prevención de Riesgos</h3>
+                                        <p class="modal-text">
+                                            Planes de Contingencia y organización de Brigadas de Emergencia.
+                                        </p>
+                                        <p class="modal-text">
+                                            Coordinación y ejecución de simulacros, señalización y planes de evacuación.
+                                        </p>
+                                        <p class="modal-text">
+                                            Evaluación de riesgos mediante auditorías programadas.
+                                        </p>
+                                        <p class="modal-text">
+                                            Capacitación del personal en seguridad, uso de elementos de protección y riesgos específicos de la obra.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" >
+                                            <path d="M146.67-226.67v-506.66 250-16 272.66Zm0 66.67q-27 0-46.84-20.17Q80-200.33 80-226.67v-506.66q0-26.34 19.83-46.5Q119.67-800 146.67-800H414l66.67 66.67h332.66q26.34 0 46.5 20.16Q880-693 880-666.67V-447q-15.33-11.67-31.67-20.5-16.33-8.83-35-15.83v-183.34H453l-66.67-66.66H146.67v506.66h314q.66 17.67 3.33 34.28t8 32.39H146.67Zm549 10L836-290.67l-32.67-32.66-107.66 107.66-52.34-53L610.67-235l85 85Zm27.66-282.67q81.34 0 138.67 57.33 57.33 57.33 57.33 138.67 0 81.34-57.33 138.67-57.33 57.33-138.67 57.33-81.34 0-138.67-57.33-57.33-57.33-57.33-138.67 0-81.34 57.33-138.67 57.33-57.33 138.67-57.33Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Monitoreo, Reportes y Documentación</h3>
+                                        <p class="modal-text">
+                                            Participación in reuniones de obra para evaluar avances y cumplimiento del Programa de Seguridad.
+                                        </p>
+                                        <p class="modal-text">
+                                            Desarrollo de informes estadísticos de accidentes e incidentes.
+                                        </p>
+                                        <p class="modal-text">
+                                            Análisis y asesoramiento in la selección de EPP (Elementos de Protección Personal) y seguridad de instalaciones.
+                                        </p>
+                                        <p class="modal-text">
+                                            Interacción con Medicina Laboral y consultores asociados.
+                                        </p>
+                                        <p class="modal-text">
+                                            Reuniones periódicas con los responsables de obra para evaluar mejoras y no conformidades.
+                                        </p>
+                                        <p class="modal-text">
+                                            Elaboración de un Informe Final de Obra, con estadísticas y conclusiones del proceso.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                                            <path d="M320.67-160q-27 0-46.84-19.83Q254-199.67 254-226.67v-106.66h122.67V-448q-37 1.33-72.84-12.17-35.83-13.5-64.5-41.83v-53.33h-48.66L60-686q36-38 87-58.67 51-20.66 103.67-20.66 29 0 63.16 7.66Q348-750 376.67-732.33V-800H840v530q0 46-32 78t-78 32H320.67Zm122.66-173.33h243.34V-270q0 19 12.16 31.17Q711-226.67 730-226.67t31.17-12.16Q773.33-251 773.33-270v-463.33h-330v46L684-446.67v47.34h-47.33l-122-122-14 16q-13.34 14.66-27.17 23.66-13.83 9-30.17 15.67v132.67ZM220-622h86v88q15.33 10 30.67 14.67 15.33 4.66 31.33 4.66 24.33 0 47.83-11.33t37.5-26.67l14-16-64.66-64.66q-31-31-69.67-48.17t-82.33-17.17q-24.67 0-45.34 5.34-20.66 5.33-42 14.66L220-622Zm400 355.33H320.67v40h310.66q-5-7-8.16-17.33-3.17-10.33-3.17-22.67Zm-299.33 40v-40 40Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Documentación Clave</h3>
+                                        <p class="modal-text">
+                                            Determinación de riesgos críticos que requieran intervención inmediata.
+                                        </p>
+                                        <p class="modal-text">
+                                            Check-list de seguridad, medio ambiente y condiciones de obra.
+                                        </p>
+                                        <p class="modal-text">
+                                            Resumen de actividades y movimientos de materiales.
+                                        </p>
+                                        <p class="modal-text">
+                                            Informes mensuales de gestión y desempeño de áreas cubiertas.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="about__card">
+                    <div class="about__more">
+                        <span>+</span>
+                    </div>
+                    <svg class="about__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path><path d="M11.412 8.586c.379.38.588.882.588 1.414h2a3.977 3.977 0 0 0-1.174-2.828c-1.514-1.512-4.139-1.512-5.652 0l1.412 1.416c.76-.758 2.07-.756 2.826-.002z"></path>
+                    </svg>
+                    <h3 class="about__card-title">RRHH</h3>
+                    <p class="about__description">Gestionamos el talento humano, promoviendo el desarrollo profesional y asegurando un ambiente laboral óptimo.</p>
+
+                    <div class="modal-overlay">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal__icon_and_title">
+                                    <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path><path d="M11.412 8.586c.379.38.588.882.588 1.414h2a3.977 3.977 0 0 0-1.174-2.828c-1.514-1.512-4.139-1.512-5.652 0l1.412 1.416c.76-.758 2.07-.756 2.826-.002z"></path>
+                                    </svg>
+                                    <h3 class="modal__header-title">Gestión de Recursos Humanos</h3>
+                                </div>
+                                        
+                                <div class="modal__header-bottoms">
+                                    <a href="#contacto">
+                                        <span class="modal-contact">Contactanos</span>
+                                    </a>
+                                    <span class="modal-close">Salir</span>
+                                </div> 
+                            </div>
+                                <div class="modal-main">
+
+                                    <div class="modal-header-main">
+                                        <h2 class="modal-title">Gestión Estratégica de Recursos Humanos</h2>
+                                        <p class="modal-paragrath">
+                                            Trabajamos en conjunto con la dirección de la organización para diseñar e implementar estrategias que optimicen la gestión del talento y garanticen el cumplimiento normativo.
+                                        </p>
+                                    </div>
+
+                                    <div class="modal-block">
+                                        <div class="modal-block-svg">
+                                            <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"">
+                                                <path d="M546.67-426.67q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM240-293.33q-27.5 0-47.08-19.59-19.59-19.58-19.59-47.08v-373.33q0-27.5 19.59-47.09Q212.5-800 240-800h613.33q27.5 0 47.09 19.58Q920-760.83 920-733.33V-360q0 27.5-19.58 47.08-19.59 19.59-47.09 19.59H240ZM333.33-360H760q0-39 27.17-66.17 27.16-27.16 66.16-27.16V-640q-39 0-66.16-27.17Q760-694.33 760-733.33H333.33q0 39-27.16 66.16Q279-640 240-640v186.67q39 0 66.17 27.16Q333.33-399 333.33-360ZM800-160H106.67q-27.5 0-47.09-19.58Q40-199.17 40-226.67V-680h66.67v453.33H800V-160ZM240-360v-373.33V-360Z"/>
+                                        </svg>
+                                        </div>
+                                        <div class="modal-block-content">
+                                            <h3 class="modal-subtitle">Administración de Sueldos y Obligaciones Laborales</h3>
+                                            <p class="modal-text">
+                                                Liquidación de sueldos y jornales conforme a la legislación vigente.
+                                            </p>
+                                            <p class="modal-text">
+                                                Confección y presentación de Declaraciones Juradas (DDJJ).
+                                            </p>
+                                            <p class="modal-text">
+                                                Gestión de boletas sindicales y federaciones.
+                                            </p>
+                                            <p class="modal-text">
+                                                Negociación sindical y representación ante gremios.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-block">
+                                        <div class="modal-block-svg">
+                                            <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                                                <path d="M480-320q-139.67-35-229.83-161.5Q160-368 160-520v-240l320-120 320 120v240q0 152-90.17 278.5Q619.67-115 480-80Zm0-69.33q103-33.34 171-125.17T730.67-480H480v-328.33l-253.33 94.66V-520q0 11.67.33 19.67.33 8 2.33 20.33H480v330.67Z"/>
+                                            </svg>
+                                        </div>
+                                        <div class="modal-block-content">
+                                            <h3 class="modal-subtitle">Gestión de Trámites y Relaciones Institucionales</h3>
+                                            <p class="modal-text">
+                                                Trámites ante Ministerio de Trabajo, AFIP, Obras Sociales, Sindicatos, Federaciones y ANSES.
+                                            </p>
+                                            <p class="modal-text">
+                                                Altas y bajas de cuentas sueldo.
+                                            </p>
+                                            <p class="modal-text">
+                                                Emisión de certificaciones de servicios y certificados laborales.
+                                            </p>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="modal-block">
+                                        <div class="modal-block-svg">
+                                            <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" >
+                                                <path d="M679.93-117.67q-6.6 0-13.21-1.55-6.6-1.56-12.39-5.45l-130-76q-11.74-6.74-18.04-18.12-6.29-11.39-6.29-24.88v-151.66q0-13.49 6.29-24.88 6.3-11.38 18.04-18.12l130-76q5.81-3.89 12.44-5.45 6.63-1.55 13.26-1.55 6.64 0 12.77 1.94 6.14 1.95 11.87 5.06l130 76q11.82 6.74 18.57 18.12 6.76 11.39 6.76 24.88v151.66q0 13.49-6.76 24.88-6.75 11.38-18.57 18.12l-130 76q-5.78 3.11-11.96 5.06-6.18 1.94-12.78 1.94ZM400-483.33q-66 0-109.67-43.67-43.66-43.67-43.66-109.67t43.66-109.66Q334-790 400-790t109.67 43.67q43.66 43.66 43.66 109.66T509.67-527Q466-483.33 400-483.33ZM80-162.67v-100q0-34.33 17.33-62.66 17.34-28.34 49.34-43.34 65-30 127.33-45.33 62.33-15.33 126-15.33h12.33q6.34 0 11.67.66-6.67 15.34-10.5 30.84t-6.17 35.16H400q-62.33 0-118.17 14.34Q226-334 174.67-308.67q-13.67 7-20.84 19.67-7.16 12.67-7.16 26.33v33.34H410q5.33 19 13.33 35.5T442-162.67H80ZM400-550q37 0 61.83-24.83 24.84-24.84 24.84-61.84t-24.84-61.83Q437-723.33 400-723.33t-61.83 24.83q-24.84 24.83-24.84 61.83t24.84 61.84Q363-550 400-550Zm0-86.67Zm10 407.34ZM580.67-410 680-351.67 779.33-410 680-467.33 580.67-410Zm126 221.33 100-57.13v-120.87l-100 59v119ZM553.33-246l100 59v-119.77l-100-58.23v119Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Capacitación y Cumplimiento Normativo</h3>
+                                        <p class="modal-text">
+                                            Formación del personal en aspectos clave de Recursos Humanos.
+                                        </p>
+                                        <p class="modal-text">
+                                            Elaboración de libros de sueldos y planillas horarias para un control eficiente de la jornada laboral.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="about__card">
+                    <div class="about__more">
+                        <span>+</span>
+                    </div>
+                    <svg class="about__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M21 11h-3V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v14c0 1.654 1.346 3 3 3h14c1.654 0 3-1.346 3-3v-6a1 1 0 0 0-1-1zM5 19a1 1 0 0 1-1-1V5h12v13c0 .351.061.688.171 1H5zm15-1a1 1 0 0 1-2 0v-5h2v5z"></path><path d="M6 7h8v2H6zm0 4h8v2H6zm5 4h3v2h-3z"></path>
+                    </svg>
+                    <h3 class="about__card-title">Seguros/ART</h3>
+                    <p class="about__description">Brindamos asesoramiento en seguros y ART, garantizando protección ante riesgos laborales e imprevistos.</p>
+
+                    <div class="modal-overlay">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal__icon_and_title">
+                                    <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M21 11h-3V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v14c0 1.654 1.346 3 3 3h14c1.654 0 3-1.346 3-3v-6a1 1 0 0 0-1-1zM5 19a1 1 0 0 1-1-1V5h12v13c0 .351.061.688.171 1H5zm15-1a1 1 0 0 1-2 0v-5h2v5z"></path><path d="M6 7h8v2H6zm0 4h8v2H6zm5 4h3v2h-3z"></path>
+                                    </svg>
+                                    <h3 class="modal__header-title">Asesoramiento y Producción de Seguros / ART</h3>
+                                </div>
+                                        
+                                <div class="modal__header-bottoms">
+                                    <a href="#contacto">
+                                        <span class="modal-contact">Contactanos</span>
+                                    </a>
+                                    <span class="modal-close">Salir</span>
+                                </div> 
+                            </div>
+                            <div class="modal-main">
+
+                                <div class="modal-header-main">
+                                    <h2 class="modal-title">Asesoramiento y Producción de Seguros / ART</h2>
+                                    <p class="modal-paragrath">
+                                        Brindamos un servicio integral en la gestión y asesoramiento de seguros y riesgos laborales, asegurando el cumplimiento normativo y la protección de los trabajadores.
+                                    </p>
+                                </div>
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                                            <path d="M480-80q-139.67-35-229.83-161.5Q160-368 160-520v-240l320-120 320 120v240q0 152-90.17 278.5Q619.67-115 480-80Zm0-69.33q103-33.34 171-125.17T730.67-480H480v-328.33l-253.33 94.66V-520q0 11.67.33 19.67.33 8 2.33 20.33H480v330.67Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Gestión y Asesoramiento en Seguros</h3>
+                                        <p class="modal-text">
+                                            Análisis y asesoramiento en la contratación de seguros generales y específicos.
+                                        </p>
+                                        <p class="modal-text">
+                                            Evaluación de coberturas y riesgos según la actividad de la empresa.
+                                        </p>
+                                        <p class="modal-text">
+                                            Optimización de costos sin comprometer la seguridad ni la protección del personal.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                                            <path d="M146.67-120q-27 0-46.84-19.83Q80-159.67 80-186.67v-466.66q0-27 19.83-46.84Q119.67-720 146.67-720H320v-93.33q0-27 19.83-46.84Q359.67-880 386.67-880h186.66q27 0 46.84 19.83Q640-840.33 640-813.33V-720h173.33q27 0 46.84 19.83Q880-680.33 880-653.33v466.66q0 27-19.83 46.84Q840.33-120 813.33-120H146.67Zm0-66.67h666.66v-466.66H146.67v466.66Zm240-533.33h186.66v-93.33H386.67V-720Zm-240 533.33v-466.66 466.66Z"/>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Seguros de Riesgos del Trabajo (ART)</h3>
+                                        <p class="modal-text">
+                                            Gestión y seguimiento de afiliaciones y trámites ante la ART.
+                                        </p>
+                                        <p class="modal-text">
+                                            Asesoramiento en el cumplimiento de normativas vigentes.
+                                        </p>
+                                        <p class="modal-text">
+                                            Presentación y actualización de formularios y documentación obligatoria.
+                                        </p>
+                                        <p class="modal-text">
+                                            Acompañamiento en la gestión de siniestros y trámites derivados.
+                                        </p>
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                                            <path d="M146.67-160q-27 0-46.84-19.83Q80-199.67 80-226.67v-128h66.67v128h128V-160h-128Zm208.66-156.67 44-224.66-90.66 40.66V-366H242v-179.33L404-614q33-14.33 47.5-18.17Q466-636 479.73-636q20.6 0 36.94 9.33Q533-617.33 544-600l41.33 66 5.78 8.44q2.89 4.23 5.89 7.89-50.33 32.67-81.67 85.17Q484-380 479.67-316.67H355.33Zm184.72-352.66q-31.05 0-53.22-22.12-22.16-22.11-22.16-53.16 0-31.06 22.11-53.22Q508.89-820 539.95-820q31.05 0 53.22 22.11 22.16 22.12 22.16 53.17t-22.11 53.22q-22.11 22.17-53.17 22.17ZM80-765.33v-128q0-27 19.83-46.84Q119.67-960 146.67-960h128v66.67h-128v128H80Zm733.33 0v-128h-128V-960h128q27 0 46.84 19.83Q880-920.33 880-893.33v128h-66.67Zm-73.66 660q-80.67  0-137.5-56.75-56.84-56.74-56.84-137.25 0-81 56.75-137.5 56.74-56.5 137.25-56.5 81 0 137.5 56.5t56.5 137.16q0 80.67-56.5 137.5-56.5 56.84-137.16 56.84Zm-17-160.67h36.66v-148.67h-36.66V-266ZM741-182.67q9 0 15.33-6 6.34-6 6.34-15.33t-6.4-15.33q-6.4-6-14.94-6-9.33 0-15.33 6T720-204q0 9.33 6 15.33t15 6Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Prevención y Reducción de Riesgos</h3>
+                                        <p class="modal-text">
+                                            Desarrollo de estrategias para minimizar riesgos laborales.
+                                        </p>
+                                        <p class="modal-text">
+                                            Implementación de programas de reducción de siniestralidad.
+                                        </p>
+                                        <p class="modal-text">
+                                            Capacitación en prevención de accidentes y uso adecuado de los seguros.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </article>
+
+                <article class="about__card">
+                    <div class="about__more">
+                        <span>+</span>
+                    </div>
+                    <svg class="about__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M7 14.001h2v2H7z"></path><path d="M19 2h-8a2 2 0 0 0-2 2v6H5c-1.103 0-2 .897-2 2v9a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2zM5 20v-8h6v8H5zm9-12h-2V6h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V6h2v2z"></path>
+                    </svg>
+                    <h3 class="about__card-title">Desarrollo de Proyectos</h3>
+                    <p class="about__description">Diseñamos y gestionamos proyectos industriales innovadores, asegurando calidad y cumplimiento normativo.</p>
+
+                    <div class="modal-overlay">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal__icon_and_title">
+                                    <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="M7 14.001h2v2H7z"></path><path d="M19 2h-8a2 2 0 0 0-2 2v6H5c-1.103 0-2 .897-2 2v9a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2zM5 20v-8h6v8H5zm9-12h-2V6h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V6h2v2z"></path>
+                                    </svg>
+                                    <h3 class="modal__header-title">Desarrollo de Proyectos Civiles e Industriales</h3>
+                                </div>
+                                        
+                                <div class="modal__header-bottoms">
+                                    <a href="#contacto">
+                                        <span class="modal-contact">Contactanos</span>
+                                    </a>
+                                    <span class="modal-close">Salir</span>
+                                </div> 
+                            </div>
+                            <div class="modal-main">
+
+                                <div class="modal-header-main">
+                                    <h2 class="modal-title">
+                                        Desarrollo de Proyectos Civiles e Industriales</h2>
+                                    <p class="modal-paragrath">
+                                        Ofrecemos asesoramiento integral en el diseño, planificación y ejecución de proyectos civiles e industriales, asegurando eficiencia, seguridad y cumplimiento normativo. Nuestro equipo de profesionales altamente capacitados supervisa cada etapa del proceso para garantizar un desarrollo exitoso.
+                                    </p>
+                                </div>
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                                            <path d="M591.21-226.67q-41.21 0-69.54-28.45-28.34-28.46-28.34-69.67t28.46-69.54q28.45-28.34 69.67-28.34 41.21 0 69.54 28.46 28.33 28.45 28.33 69.67 0 41.21-28.45 69.54-28.46 28.33-69.67 28.33ZM186.67-80q-27 0-46.84-19.83Q120-119.67 120-146.67v-600q0-27 19.83-46.83 19.84-19.83 46.84-19.83h56.66V-880h70v66.67h333.34V-880h70v66.67h56.66q27 0 46.84 19.83Q840-773.67 840-746.67v600q0 27-19.83 46.84Q800.33-80 773.33-80H186.67Zm0-66.67h586.66v-420H186.67v420Zm0-486.66h586.66v-113.34H186.67v113.34Zm0 0v-113.34 113.34Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Diseño y Planificación de Proyectos</h3>
+                                        <p class="modal-text">
+                                            Desarrollo de proyectos civiles adaptados a cada necesidad.
+                                        </p>
+                                        <p class="modal-text">
+                                            Diseño y optimización de proyectos industriales para maximizar la eficiencia operativa.
+                                        </p>
+                                        <p class="modal-text">
+                                            Creación de layouts para plantas industriales, mejorando la distribución de espacios y procesos.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                                            <path d="M163.67-120v-102.67h126L185-575.33q-30.33-15-48.17-41.67Q119-643.67 119-682.67q0-48 34.67-82.66Q188.33-800 236.33-800q42.34 0 71.84 23.17 29.5 23.16 40.16 60.83h140v-52.67q0-13.66 9.84-23.5Q508-802 521.67-802q10.33 0 18.16 7 7.84 7 9.84 17l72.66-69.33q8.34-8.34 20.84-10.84t25.16 3.5L825.67-780q10 5.33 13.83 15.17 3.83 9.83-1.17 20.16Q833-734 822.83-731.5 812.67-729 803-734l-151.33-72L555-710.67v53.34L651.67-560 803-632.67q10.33-5 20.33-2 10 3 15 13.34 5.34 10.66 1.34 21-4 10.33-14.67 15.66L671-512q-13.33 6.67-26.17 5.5-12.83-1.17-22.5-10.83l-72.66-69.34q-2 11.34-9.84 17.67-7.83 6.33-18.16 6.33-13.67 0-23.5-9.83-9.84-9.83-9.84-23.5v-53.33H347q-1 10.66-6.5 21.33-5.5 10.67-13.5 18.67l203.33 386.66h153.34V-120h-520Zm72.66-512q21.67 0 36.17-14.5t14.5-36.17q0-21.66-14.5-36.16-14.5-14.5-36.17-14.5-21.66 0-36.16 14.5-14.5 14.5-14.5 36.16 0 21.67 14.5 36.17t36.16 14.5ZM361-222.67h94L271.67-574q-2 1.33-7.34 2.67-5.33 1.33-8 2L361-222.67Zm94 0Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Elaboración Técnica y Cálculos Estructurales</h3>
+                                        <p class="modal-text">
+                                            Elaboración de planos técnicos para instalaciones proyectadas o existentes.
+                                        </p>
+                                        <p class="modal-text">
+                                            Cálculo estructural para garantizar la seguridad y estabilidad de las construcciones.
+                                        </p>
+                                        <p class="modal-text">
+                                            Cálculo y optimización de materiales, asegurando costos eficientes sin comprometer la calidad.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                                            <path d="M440-120v-66.67h333.33V-484q0-121.46-85.38-206.06-85.38-84.61-207.95-84.61t-207.95 84.61q-85.38 84.6-85.38 206.06v244H160q-33 0-56.5-23.5T80-320v-80q0-21 10.5-39.5T120-469l3-53q8-68 39.5-126t79-101q47.5-43 109-67T480-840q68 0 129 24t109 66.5Q766-707 797-649t40 126l3 52q19 9 29.5 27t10.5 38v92q0 20-10.5 38T840-249v62.33q0 27.5-19.58 47.09Q800.83-120 773.33-120H440Zm-80.12-286.67q-14.21 0-23.71-9.61-9.5-9.62-9.5-23.84 0-14.21 9.61-23.71 9.62-9.5 23.84-9.5 14.21 0 23.71 9.61 9.5 9.62 9.5 23.84 0 14.21-9.61 23.71-9.62 9.5-23.84 9.5Zm240 0q-14.21 0-23.71-9.61-9.5-9.62-9.5-23.84 0-14.21 9.61-23.71 9.62-9.5 23.84-9.5 14.21 0 23.71 9.61 9.5 9.62 9.5 23.84 0 14.21-9.61 23.71-9.62 9.5-23.84 9.5ZM241-462q-7-106 64-182t177-76q87.67 0 152.83 57.17Q700-605.67 714-519q-89.67-1-164.17-49.67-74.5-48.66-115.02-129.33Q419-618 367.5-555.5T241-462Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Gestión y Control de Obras</h3>
+                                        <p class="modal-text">
+                                            Supervisión del avance del proyecto, asegurando el cumplimiento de plazos y estándares de calidad.
+                                        </p>
+                                        <p class="modal-text">
+                                            Análisis y desarrollo de soluciones técnicas para optimizar cada etapa del proceso constructivo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="about__card">
+                    <div class="about__more">
+                        <span>+</span>
+                    </div>
+                    <svg class="about__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="m13.293 2.707.818.818L3.318 14.318C2.468 15.168 2 16.298 2 17.5s.468 2.332 1.318 3.183C4.169 21.532 5.299 22 6.5 22s2.331-.468 3.182-1.318L20.475 9.889l.818.818 1.414-1.414-8-8-1.414 1.414zm3.182 8.354-2.403-2.404-1.414 1.414 2.403 2.404-1.414 1.415-.99-.99-1.414 1.414.99.99-1.415 1.415-2.403-2.404L7 15.728l2.403 2.404-1.136 1.136c-.945.944-2.59.944-3.535 0C4.26 18.795 4 18.168 4 17.5s.26-1.295.732-1.768L15.525 4.939l3.535 3.535-2.585 2.587z"></path>
+                    </svg>
+                    <h3 class="about__card-title">Ensayos y Controles Técnicos sobre Instalaciones Industriales</h3>
+                    <p class="about__description">Realizamos pruebas y verificaciones para garantizar el correcto funcionamiento y seguridad de las instalaciones.</p>
+
+                    <div class="modal-overlay">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="modal__icon_and_title">
+                                    <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                        <path d="m13.293 2.707.818.818L3.318 14.318C2.468 15.168 2 16.298 2 17.5s.468 2.332 1.318 3.183C4.169 21.532 5.299 22 6.5 22s2.331-.468 3.182-1.318L20.475 9.889l.818.818 1.414-1.414-8-8-1.414 1.414zm3.182 8.354-2.403-2.404-1.414 1.414 2.403 2.404-1.414 1.415-.99-.99-1.414 1.414.99.99-1.415 1.415-2.403-2.404L7 15.728l2.403 2.404-1.136 1.136c-.945.944-2.59.944-3.535 0C4.26 18.795 4 18.168 4 17.5s.26-1.295.732-1.768L15.525 4.939l3.535 3.535-2.585 2.587z"></path>
+                                    </svg>
+                                    <h3 class="modal__header-title">
+                                        Ensayos y Controles Técnicos sobre Instalaciones Industriales</h3>
+                                </div>
+                                        
+                                <div class="modal__header-bottoms">
+                                    <a href="#contacto">
+                                        <span class="modal-contact">Contactanos</span>
+                                    </a>
+                                    <span class="modal-close">Salir</span>
+                                </div> 
+                            </div>
+                            <div class="modal-main">
+
+                                <div class="modal-header-main">
+                                    <h2 class="modal-title">
+                                        Ensayos y Controles Técnicos sobre Instalaciones Industriales</h2>
+                                    <p class="modal-paragrath">
+                                        Brindamos asesoramiento técnico especializado y realizamos ensayos en instalaciones eléctricas y equipamiento industrial, garantizando seguridad, cumplimiento normativo y eficiencia operativa.
+                                    </p>
+                                </div>
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                                            <path d="m466.67-293.33 166.66-240h-122l80.67-280H346.67v346.66h120v173.34ZM400-80v-320H280v-480h400l-80 280h160L400-80Zm66.67-386.67h-120 120Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Ensayos y Certificaciones en Instalaciones Eléctricas</h3>
+                                        <p class="modal-text">
+                                            Medición del sistema de puesta a tierra y continuidad de masas según Res. SRT 900/15.
+                                        </p>
+                                        <p class="modal-text">
+                                            Verificación y ensayo del tiempo de actuación de interruptores diferenciales (AEA 90364).
+                                        </p>
+                                        <p class="modal-text">
+                                            Certificación de instalación eléctrica desenergizada para obras en demolición y excavación.
+                                        </p>
+                                        <p class="modal-text">
+                                            Informes y certificaciones eléctricas para establecimientos en CABA y Provincia de Buenos Aires.
+                                        </p>
+                                        <p class="modal-text">
+                                            Relevamiento y elaboración de planos eléctricos para estudios de factibilidad.
+                                        </p>
+                                        <p class="modal-text">
+                                            Declaración de conformidad de instalación eléctrica para industrias y comercios.
+                                        </p>
+                                        <p class="modal-text">
+                                            Cálculo y diseño de ventilación mecánica.
+                                        </p>
+                                        <p class="modal-text">
+                                            Certificación de instalaciones eléctricas antiexplosivas.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                                            <path d="M833.33-120 630-323.33q-40.33 32-91.17 51-50.83 19-105.5 19-84 0-153.5-40.34Q210.33-334 168.33-400h83.34q34.66 37 81.16 58.5t100.5 21.5Q536-320 608-392.33q72-72.34 72-174.34 0-102.66-72-174.66t-174.67-72q-98.66 0-169.83 67.83Q192.33-677.67 187-580h-66.67q5.34-125.67 95.5-212.83Q306-880 433.33-880q130.67 0 222 91.33 91.34 91.34 91.34 222 0 54.67-19 105.5-19 50.84-51 91.17L880-166.67 833.33-120ZM397-400l-63-208-52 148H80v-60h160l66-190h60l61 204 43-134h60l60 120h30v60h-67l-47-94-50 154h-59Z"/>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Análisis y Diagnóstico de Instalaciones Industriales</h3>
+                                        <p class="modal-text">
+                                            Estudios termográficos para detección temprana de fallos en tableros e instalaciones eléctricas (ISO 18434).
+                                        </p>
+                                        <p class="modal-text">
+                                            Medición de resistencia de aislamiento en conductores eléctricos, motores y transformadores.
+                                        </p>
+                                        <p class="modal-text">
+                                            Desarrollo de proyectos de iluminación para espacios industriales y comerciales.
+                                        </p>
+                                        <p class="modal-text">
+                                            Capacitación en trabajos con tensión hasta 1 kV según Res. SRT 3068/14.
+                                        </p>
+                                    </div>
+                                </div>
+
+
+                                <div class="modal-block">
+                                    <div class="modal-block-svg">
+                                        <svg class="modal-block-svg-edit" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                                            <path d="M766.67-646.67q-17 0-28.5-11.5t-11.5-28.5q0-8 3.5-15.5t8.5-12.5q12-12 55-27l43-15q-8 23-15 43-6 17-13.5 33t-13.5 22q-5 5-12.5 8.5t-15.5 3.5ZM146.67-120q-27.5 0-47.09-19.58Q80-159.17 80-186.67v-586.66q0-27.5 19.58-47.09Q119.17-840 146.67-840h260q27.5 0 47.08 19.58 19.58 19.59 19.58 47.09v349.66q12.34-4.33 24.34-7 12-2.66 22.38-2.66 47.2 0 80.24 33.05 33.04 33.06 33.04 80.28v83.33q0 19 15.5 34.5t34.84 15.5q19.33 0 34.5-15.5 15.16-15.5 15.16-34.5v-216.66h-40v-55q-54-23-87-70.52-33-47.53-33-107.66 0-80.49 56.84-136.99Q687-880 767-880q80 0 136.5 56.56Q960-766.87 960-686.62q0 59.95-33 107.62t-87 70.67v55h-40v216.66Q800-190 765.33-155q-34.66 35-81.66 35t-82-35q-35-35-35-81.67V-320q0-19.83-13.42-33.25-13.42-13.42-33.25-13.42-19 0-32.83 13.42-13.84 13.42-13.84 33.25v133.33q0 27.5-19.58 47.09Q434.17-120 406.67-120h-260Zm619.92-440q52.74 0 89.74-36.92 37-36.92 37-89.67 0-52.74-36.92-89.74-36.92-37-89.66-37-52.75 0-89.75 36.92t-37 89.66Q640-634 676.92-597t89.67 37ZM146.67-186.67h260V-296l-80 80v-94.33l80-80V-496l-80 80v-94.33l80-80v-112.34l-80 80V-717L383-773.33H170.33L226.67-717v94.33l-80-80v112.34l80 80V-416l-80-80v105.67l80 80V-216l-80-80v109.33Zm130-293.33Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="modal-block-content">
+                                        <h3 class="modal-subtitle">Ensayos en Aparatos Sometidos a Presión (ASP)</h3>
+                                        <p class="modal-text">
+                                            Medición de espesores en equipos a presión para evaluar su integridad estructural.
+                                        </p>
+                                        <p class="modal-text">
+                                            Prueba hidráulica de ASP, asegurando su resistencia y seguridad operativa.
+                                        </p>
+                                        <p class="modal-text">
+                                            Calibración de válvulas de seguridad para un funcionamiento óptimo.
+                                        </p>
+                                        <p class="modal-text">
+                                            Auditoría general sobre el estado y funcionamiento de ASP, con y sin fuego.
+                                        </p>
+                                        <p class="modal-text">
+                                            Habilitación de ASP ante el Ministerio de Ambiente de la Provincia de Buenos Aires.
+                                        </p>
+                                        <p class="modal-text">
+                                            Extensión de vida útil de equipos a presión, aplicando criterios de seguridad y normativa vigente.
+                                        </p>
+                                        <p class="modal-text">
+                                            Ensayos no destructivos en estructuras de ASP, para detectar defectos internos sin afectar el equipo.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="knowledge">
+            <div class="knowledge__container">
+                <!-- El JS actualizará esta estructura para incluir el inner-container -->
+                <div class="knowledge__texts">
+                    <h2>Galería de Proyectos</h2>
+                    <p>Descubre una selección de nuestros proyectos destacados, donde la innovación se fusiona con la excelencia en cada detalle. Cada imagen refleja nuestro compromiso con la calidad y la eficiencia, ofreciendo una visión única de cómo transformamos ideas en realidades tangibles.</p>
+                </div>
+                <figure class="knowledge__picture">
+                    <div class="knowledge__item">
+                    <div class="knowledge__photo" style="background-image: url('./images/knowledge1.jpg');"></div>
+                    <div class="knowledge__overlay"></div>
+                    <figcaption class="knowledge__caption">Proyecto 1</figcaption>
+                    </div>
+                    <div class="knowledge__item">
+                    <div class="knowledge__photo" style="background-image: url('./images/knowledge2.jpg');"></div>
+                    <div class="knowledge__overlay"></div>
+                    <figcaption class="knowledge__caption">Proyecto 2</figcaption>
+                    </div>
+                    <div class="knowledge__item">
+                    <div class="knowledge__photo" style="background-image: url('./images/knowledge3.jpg');"></div>
+                    <div class="knowledge__overlay"></div>
+                    <figcaption class="knowledge__caption">Proyecto 3</figcaption>
+                    </div>
+                    <div class="knowledge__item">
+                    <div class="knowledge__photo" style="background-image: url('./images/knowledge4.jpg');"></div>
+                    <div class="knowledge__overlay"></div>
+                    <figcaption class="knowledge__caption">Proyecto 4</figcaption>
+                    </div>
+                    <div class="knowledge__item">
+                    <div class="knowledge__photo" style="background-image: url('./images/knowledge5.jpg');"></div>
+                    <div class="knowledge__overlay"></div>
+                    <figcaption class="knowledge__caption">Proyecto 5</figcaption>
+                    </div>
+                    <div class="knowledge__item">
+                    <div class="knowledge__photo" style="background-image: url('./images/knowledge6.jpg');"></div>
+                    <div class="knowledge__overlay"></div>
+                    <figcaption class="knowledge__caption">Proyecto 6</figcaption>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <section class="security">
+            <div class="security__container container">
+
+                <div class="security__title"> 
+                    <a href="https://www.safety-west.com.ar/" target="_blank">
+                        <img class="security__img-title" src="./images/Safety-West-Logo2.png" alt="security">
+                    </a>
+                </div>
+
+                <div class="security__element">
+                    <a href="https://www.safety-west.com.ar/" target="_blank">
+                        <img src="./images/SeguridadTotal.png" alt="Seguridad Total" class="security__img"/>
+                    </a>
+                </div>
+            
+                <div class="security__element">
+                    <a href="https://www.safety-west.com.ar/" target="_blank">
+                        <img src="./images/ElementosDeSeguridad.png" alt="Elementos de Seguridad" class="security__img"/>
+                    </a>
+                </div>
+            
+                <div class="security__element">
+                    <a href="https://www.safety-west.com.ar/" target="_blank">
+                        <img src="./images/YMuchoMas.png" alt="Y Mucho Más" class="security__img" />
+                    </a>
+                </div>
+
+                <div class="security__contact">
+                    <a href="https://www.safety-west.com.ar/" target="_blank" class="security__bottom">
+                        <span class="truncate">Ver productos</span>
+                    </a>
+                </div>
+            </div>
+            <img src="./images/Safety.png" alt="Safety West Logo" class="security__logo">
+        </section>
+
+        <section id="testimonios" class="testimony">
+            <div class="container testimony__container">
+                <h2 class="testimony__title">Testimonios</h2>
+                <div class="testimony__grid">
+                    <article class="testimony__card">
+                        <!-- <div class="testimony__image" style='background-image: url("https://cdn.usegalileo.ai/sdxl10/471b8a63-e3f9-4b68-89fa-d3dea6ac21f6.png");'></div> -->
+                        <div class="testimony__content">
+                            <h3 class="testimony__client-name">Adrián S.</h3>
+                            <p class="testimony__client-feedback">“Excelente atencion!!<br>Muy cordiales en el trato personal y muy responsables en su trabajo.</br>Responden de manera rapida y eficaz ante cualquier consulta y  siempre brindan soluciones ante algun problema.”</p>
+                        </div>
+                    </article>
+                    <article class="testimony__card">
+                        <!-- <div class="testimony__image" style='background-image: url("https://cdn.usegalileo.ai/sdxl10/ae45350f-7c3f-4e31-b492-d9120f3fed51.png");'></div> -->
+                        <div class="testimony__content">
+                            <h3 class="testimony__client-name">Juan C.</h3>
+                            <p class="testimony__client-feedback">“La atencion es muy buena, atentos a todos los detalles ya sea en lo administrativo, para tramites con los organismos referidos a la seguridad e higiene, y en obra siempre controlando y capacitando al personal para prevenir accidentes.”</p>
+                        </div>
+                    </article>
+                    <article class="testimony__card">
+                        <!-- <div class="testimony__image" style='background-image: url("https://cdn.usegalileo.ai/sdxl10/2b6466bb-567c-4bfa-a6fe-c92e1d51cc18.png");'></div> -->
+                        <div class="testimony__content">
+                            <h3 class="testimony__client-name">Ariel B.</h3>
+                            <p class="testimony__client-feedback">“Excelente Servicio, siempre cumplen con los Objetivos y nos resuelven los problemas... Muy recomendable”</p>
+                        </div>
+                    </article>
+                    <article class="testimony__card">
+                        <!-- <div class="testimony__image" style='background-image: url("https://cdn.usegalileo.ai/sdxl10/2b6466bb-567c-4bfa-a6fe-c92e1d51cc18.png");'></div> -->
+                        <div class="testimony__content">
+                            <h3 class="testimony__client-name">Sebastián G.</h3>
+                            <p class="testimony__client-feedback">“No sé si hará más de diez Años que estamos trabajando juntos y la verdad nunca hubo un problema. Las diferencias que tuvimos siempre se aclararon hablando. Al día de hoy no tengo ninguna queja para poder hacer, sino estar conforme con el trabajo que tenemos juntos.”</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="questions container"> 
+            <h2 class="subtitle">Preguntas Frecuentes</h2>
+            <p class="questions__paragraph">Analizamos cada caso para ofrecer soluciones técnicas y legales adaptadas a tus objetivos empresariales.</p>
+
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Cómo contratar nuestros servicios de consultoría?
+                            <span class="questions__arrow">
+                                <img src="./images/arrowdown.svg" alt="" class="questions__img">
+                            </span></h3>
+                        <p class="questions__show">Para contratar nuestros servicios de consultoría, primero revisamos en detalle los requerimientos específicos de tu empresa. A continuación, desarrollamos un plan de trabajo personalizado que aborda tus necesidades particulares. Una vez que ambos lados aprueban el plan, iniciamos el proceso de asesoría, asegurando una implementación efectiva y adaptada a tus objetivos empresariales.</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Qué beneficios aporta la asesoría técnico-legal?
+                            <span class="questions__arrow">
+                                <img src="./images/arrowdown.svg" alt="" class="questions__img">
+                            </span></h3>
+                        <p class="questions__show">Nuestra asesoría técnico-legal proporciona múltiples beneficios, incluyendo el cumplimiento riguroso de las normativas vigentes, lo que minimiza riesgos legales para tu empresa. Además, optimizamos la gestión de recursos y mejoramos la eficiencia operativa, lo que contribuye significativamente al crecimiento y estabilidad de tus proyectos empresariales.</p>
+                    </div>
+                </article>
+
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Cuánto tiempo requiere la implementación de mejoras?
+                            <span class="questions__arrow">
+                                <img src="./images/arrowdown.svg" alt="" class="questions__img">
+                            </span></h3>
+                        <p class="questions__show">El tiempo necesario para implementar mejoras varía dependiendo de la complejidad y el alcance del proyecto. Generalmente, establecemos plazos detallados y metas específicas desde la fase inicial para asegurar una ejecución organizada y eficiente. Esto permite una adaptación fluida a cualquier eventualidad y garantiza que las mejoras se integren de manera efectiva en tus operaciones diarias.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="questions__offer">
+                <h2 class="subtitle">¿Listo para comenzar?</h2>
+                <p class="questions__copy">Contáctanos hoy para comenzar a optimizar tus proyectos con nuestros servicios especializados, diseñados para impulsar la eficiencia y el éxito de tu empresa.</p>
+                <a href="#contacto" class="cta">Contáctanos</a>
+            </section>
+        </section>
+
+        <section id="contacto" class="contacto container">
+            <div class="contacto__form">
+                <h2 class="contacto__title">Envíanos tu consulta</h2>
+                <form action="mailto:consulting_she@yahoo.com.ar" method="post" enctype="text/plain">
+                    <div class="form__group">
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required>
+                    </div>
+                    <div class="form__group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Tu email" required>
+                    </div>
+                    <div class="form__group">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Asunto" required>
+                    </div>
+                    <div class="form__group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu consulta" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="cta contacto__submit">Enviar</button>
+                </form>
+                <div class="contacto__social">
+                    <a href="https://www.linkedin.com/company/fyf-consultores-asociados-arg/about/" target="_blank" class="social__link linkedin">
+                    <img src="./images/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.facebook.com/share/1GpHftTinL/" target="_blank" class="social__link facebook">
+                    <img src="./images/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/fyfconsultoresasociados/" target="_blank" class="social__link instagram">
+                    <img src="./images/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="https://wa.me/5492325415641" target="_blank" class="social__link whatsapp">
+                    <img src="./images/whatsapp.svg" alt="WhatsApp">
+                    </a>
+                </div>
+            </div>
+        
+            <div class="contacto__map">
+                <h2 class="contacto__title">Nuestra Ubicación</h2>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps?q=Chacabuco+286+San+Andres+de+Giles+6720+Bs.+As.+Argentina&output=embed" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="contacto__address">
+                    <p>Chacabuco 286</p>
+                    <p>San Andres de Giles (6720) Bs. As. Argentina</p>
+                    <p>Tel.: +54 (02325)-442261</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__inner">
+                <h2 class="footer__title">F&F Consultores Asociados</h2>
+                <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li><a href="#inicio" class="footer__text">Inicio</a></li>
+                    <li><a href="#servicios" class="footer__text">Servicios</a></li>
+                    <li><a href="#proyectos" class="footer__text">Proyectos</a></li>
+                    <li><a href="#testimonios" class="footer__text">Testimonios</a></li>
+                    <li><a href="#contacto" class="footer__text">Contacto</a></li>
+                </ul>
+                </nav>
+                <div class="footer__social">
+                <a href="https://www.linkedin.com/company/fyf-consultores-asociados-arg/about/" target="_blank" class="footer__icon">
+                    <img src="./images/linkedin.svg" alt="LinkedIn">
+                </a>
+                <a href="https://www.facebook.com/share/1GpHftTinL/" target="_blank" class="footer__icon">
+                    <img src="./images/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/fyfconsultoresasociados/" target="_blank" class="footer__icon">
+                    <img src="./images/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://wa.me/5492325415641" target="_blank" class="footer__icon">
+                    <img src="./images/whatsapp.svg" alt="WhatsApp">
+                </a>
+                </div>
+            </div>
+            <p class="footer__copy">© 2025 F&F Consultores. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts simplificados para restablecer la funcionalidad -->
+    <script src="./js/main.js"></script>
+    <script src="./js/hero-effects.js"></script>
+    <script src="./js/about-effects.js"></script>
+    <script src="./js/modal-effects.js"></script>
+    <script src="./js/services-counter.js"></script>
+    <script src="./js/knowledge-effects.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+/**
+ * Estilos dedicados para el contador de servicios - Simplificados
+ */
+
+/* Efecto básico para el número durante el conteo */
+.services-number.counting {
+    position: relative;
+    color: #666666;
+    opacity: 0.75;
+}
+
+/* Quitamos el efecto de brillo después del contador */
+.services-number.final::after {
+    display: none;
+}
+
+/* Eliminamos la cinta decorativa debajo del número 7 */
+.number-ribbon {
+    display: none;
+}
+
+/* Partículas suaves alrededor del número 7 */
+.counter-particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(26, 125, 54, 0.7); /* Volvemos al color verde original */
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none; /* Evitar cualquier interacción con el mouse */
+}
+
+/* Eliminamos específicamente cualquier efecto hover en todos los elementos del contador */
+.about__services-count *,
+.about__services-count *:hover,
+.services-number:hover,
+.services-text:hover,
+.counter-particle:hover {
+    transform: none !important;
+    transition: none !important;
+    box-shadow: none !important;
+    background: none !important;
+}
+
+/* Aseguramos que no haya cambios de transformación al hacer hover */
+.services-number {
+    transform: translate(-50%, -50%) !important;
+}
+
+.services-number.final {
+    transform: translate(-50%, -60%) !important;
+}
+
+/* Animaciones básicas */
+@keyframes numberAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animación para las partículas */
+@keyframes floatParticle {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(var(--x), var(--y));
+        opacity: 0;
+    }
+}
+
+/* Animación de aparición del número */
+@keyframes numberAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(10px) scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-5px) scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Efecto de tipografía dinámica */
+.dynamic-stroke {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+}
+
+.dynamic-stroke.active {
+    animation: strokeEffect 0.6s forwards;
+}
+
+@keyframes strokeEffect {
+    0% {
+        opacity: 0.8;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+}
+
+/* Estilo minimalista para el título y línea */
+.about__title-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animación minimalista para el título */
+.about__title {
+    transition: color 0.3s ease;
+}
+
+.about__title:hover {
+    color: #1A7D36;
+}
+
+/* Animación minimalista para la línea */
+.about__title::after {
+    transition: width 0.4s ease, background-color 0.4s ease;
+}
+
+/* Efecto de aparición para la descripción */
+.about__description-main {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.about__description-main:hover {
+    transform: translateY(-2px);
+}
+
+/* Asegurar que el posicionamiento no se vea afectado por eventos del ratón */
+.services-number, 
+.services-text,
+.counter-particle,
+.dynamic-stroke {
+    pointer-events: none !important;
+}
+
+/* Eliminar cualquier transformación no deseada en hover */
+.services-number:hover,
+.services-text:hover,
+.counter-particle:hover,
+.dynamic-stroke:hover,
+.about__services-count:hover * {
+    transform: none !important;
+}
+
+/* Forzar el centrado para los números 1-6 */
+.services-number:not(.final) {
+    transform: translate(-50%, -50%) !important;
+}

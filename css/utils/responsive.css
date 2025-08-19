@@ -1,0 +1,75 @@
+/* Utilidades responsivas generales */
+
+/* Clases para ocultar/mostrar elementos en diferentes tamaños de pantalla */
+.hide-on-mobile {
+    display: initial;
+}
+
+.show-on-mobile {
+    display: none;
+}
+
+/* Ajustes globales para todos los breakpoints */
+@media (max-width: 1200px) {
+    :root {
+        /* Ajuste sutil de márgenes en pantallas más pequeñas */
+        --padding-container: 80px 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    :root {
+        /* Ajuste más notorio en tablets */
+        --padding-container: 60px 0;
+    }
+    
+    /* Reducción general de tamaños y espaciados */
+    h1, h2, .large-title {
+        font-size: 90%; /* Reducción proporcional */
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --padding-container: 40px 0;
+    }
+    
+    /* Cambio en la visualización de elementos */
+    .hide-on-mobile {
+        display: none;
+    }
+    
+    .show-on-mobile {
+        display: initial;
+    }
+    
+    /* Ajustes generales para textos */
+    h1, h2, h3, .large-title {
+        font-size: 85%;
+    }
+    
+    p, .body-text {
+        font-size: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --padding-container: 30px 0;
+    }
+    
+    /* Ajustes más extremos para móviles pequeños */
+    html, body {
+        font-size: 14px; /* Reducción general del tamaño base de fuente */
+    }
+    
+    /* Espaciados más compactos */
+    .section {
+        margin-bottom: 2rem;
+    }
+    
+    /* Botones más optimizados para tocar en móvil */
+    button, .button, .cta {
+        padding: 0.7rem 1.4rem;
+    }
+}

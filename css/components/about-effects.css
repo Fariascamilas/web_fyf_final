@@ -1,0 +1,403 @@
+/* Efectos profesionales para la sección About */
+
+/* Efecto de ocultamiento del header */
+.header--hidden {
+    transform: translateY(-100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.header {
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Efectos de carga de tarjetas */
+.about__card {
+    animation: cardAppear 0.6s ease-out backwards;
+}
+
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Retraso en la aparición de las tarjetas */
+.about__grid .about__card:nth-child(1) { animation-delay: 0.1s; }
+.about__grid .about__card:nth-child(2) { animation-delay: 0.2s; }
+.about__grid .about__card:nth-child(3) { animation-delay: 0.3s; }
+.about__grid .about__card:nth-child(4) { animation-delay: 0.4s; }
+.about__grid .about__card:nth-child(5) { animation-delay: 0.5s; }
+.about__grid .about__card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Efecto de brillo al pasar el cursor */
+.about__card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.05) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(45deg);
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.5s ease;
+    pointer-events: none;
+}
+
+.about__card:hover::before {
+    animation: shineEffect 1.5s forwards;
+}
+
+@keyframes shineEffect {
+    0% {
+        opacity: 0;
+        left: -50%;
+    }
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        left: 150%;
+    }
+}
+
+/* Mejora en la transición de tarjetas */
+.about__card {
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                box-shadow 0.5s cubic-bezier(0.165, 0.84, 0.44, 1), 
+                background-color 0.5s ease;
+}
+
+.about__card:hover {
+    transform: translateY(-8px);
+}
+
+/* Efecto de pulso para el botón + */
+.about__more {
+    position: relative;
+    overflow: hidden;
+}
+
+.about__more::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(103, 175, 81, 0.3);
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.about__card:hover .about__more::after {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* Efecto de elevación para íconos */
+.about__icon {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                fill 0.3s ease;
+}
+
+.about__card:hover .about__icon {
+    transform: translateY(-5px) scale(1.1);
+}
+
+/* Estilo mejorado para modal-overlay */
+.modal-overlay {
+    transition: opacity 0.4s ease;
+}
+
+/* Estilo al hacer clic en la tarjeta */
+.about__card:active {
+    transform: scale(0.98);
+    transition: transform 0.2s;
+}
+
+/* Animación para el título de servicios */
+.about__services-count span {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.about__services-count span.animate-title {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.about__title {
+    transform: scale(0.95);
+    opacity: 0;
+    transition: transform 0.8s ease 0.2s, opacity 0.8s ease 0.2s;
+}
+
+.about__services-count span.animate-title + .about__title {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.about__description-main {
+    transform: translateY(15px);
+    opacity: 0;
+    transition: transform 0.8s ease 0.4s, opacity 0.8s ease 0.4s;
+}
+
+.about__services-count span.animate-title ~ .about__description-main {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Animación para el contador */
+@keyframes numberPulse {
+    0%, 100% {
+        opacity: 0.06;
+        transform: translateX(-50%) scale(1);
+    }
+    50% {
+        opacity: 0.12;
+        transform: translateX(-50%) scale(1.05);
+    }
+}
+
+.about__services-count span::before {
+    animation: numberPulse 3s infinite ease-in-out;
+}
+
+/* Efectos adicionales para el contador de servicios */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efecto de brillo en el borde para el contador final */
+.about__services-count {
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.about__services-count::after {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 18px;
+    background: linear-gradient(45deg, transparent, rgba(17, 85, 34, 0.2), transparent);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.services-counter.final ~ .counter-completed.visible + .about__services-count::after {
+    opacity: 1;
+    animation: rotateBorder 4s linear infinite;
+}
+
+@keyframes rotateBorder {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Efectos de hover para el contador */
+.about__services-count:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Efecto de resplandor adicional para el número 7 */
+.services-counter.final {
+    position: relative;
+}
+
+.services-counter.final::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(17, 85, 34, 0.4) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    animation: pulseEffect 2s infinite;
+}
+
+@keyframes pulseEffect {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0.1;
+    }
+}
+
+/* Efecto de escáner */
+.services-counter.final::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(17, 85, 34, 0.7), 
+        transparent
+    );
+    top: 0;
+    left: 0;
+    animation: scanEffect 2s infinite;
+    opacity: 0.7;
+}
+
+@keyframes scanEffect {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+/* Efectos de animación para el contador de servicios */
+.animate-title {
+    opacity: 0;
+    animation: fadeIn 0.8s forwards 0.3s;
+}
+
+.animate-description {
+    opacity: 0;
+    animation: fadeIn 0.8s forwards 0.6s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efecto de brillo para el número 7 */
+.about__services-count.highlight-number {
+    position: relative;
+}
+
+/* Efecto de contorno brillante */
+.about__services-count.highlight-number::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(90deg, 
+        rgba(26, 125, 54, 0.1), 
+        rgba(26, 125, 54, 0.2), 
+        rgba(26, 125, 54, 0.1));
+    border-radius: 33px;
+    z-index: -1;
+    opacity: 0;
+    animation: outlineGlow 2s infinite alternate;
+}
+
+@keyframes outlineGlow {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0.6;
+        transform: scale(1.03);
+    }
+}
+
+/* Efecto de sombra dinámica */
+.about__services-count {
+    transition: all 0.3s ease;
+}
+
+.about__services-count:hover {
+    box-shadow: 
+        0 4px 15px rgba(26, 125, 54, 0.15),
+        0 1px 3px rgba(26, 125, 54, 0.1);
+}
+
+/* Efecto de microinteracción al hacer clic */
+.about__services-count:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 8px rgba(26, 125, 54, 0.1);
+}
+
+/* Indicador de interactividad para mejorar UX */
+.about__services-count::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(26, 125, 54, 0.08);
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.about__services-count:hover::before {
+    opacity: 1;
+    transform: scale(1);
+    animation: softPulse 1.5s infinite alternate;
+}
+
+@keyframes softPulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1.3);
+        opacity: 0;
+    }
+}

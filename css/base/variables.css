@@ -1,0 +1,52 @@
+:root {
+    --padding-container: 100px 0;
+
+    --color-background: #f8fafc;
+    --color-border-bottom: #e7edf3;
+
+    /* HEADER */
+    --color-bottom-1: #016a1f;
+    --color-bottom-text: #fff;
+    --color-title_header: #195f00; 
+
+    /* HERO */
+    --color-hero-circle: #4f8e3a;
+
+    /* ABOUT IT */
+    --color-title-about: #0e141b;
+    --color-bottom-about: #ffe081; 
+    --color-icons-about: #67af51;
+    --color-icons-trans: #488a34;
+
+    /* MODAL */ 
+    --color-background-modal: #ebfcf2;
+
+    /* SECURITY */  
+    --color-bottom-security: #ffca2c;
+    --color-deg1: #fdd457;
+    --color-deg2: #D8F3DC;
+
+    /* NEW SECURITY */ 
+    --color-red-black-security: #3b1f21;
+    --color-red-security: #fe1a05;
+    --color-orange-security: #f8871b;
+    --color-yellow-security: #f3dc4f;
+
+    /* QUESTIONS */
+    --color-background-questions: #272727;
+    --color-background-questions1: #015a33;
+    --color-background-container: #333;
+    --color-background-container1: #2E8B57;
+
+    /* COMMON COLORS */
+    --color-gray: #d9d9d9;
+    --color-yellow: #f3dc4f;
+    --color-green: #4f8e3a;
+    --color-light-green: #67af51;
+
+    /* BREAKPOINTS (para usar con media queries) */
+    --breakpoint-sm: 480px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-xl: 1200px;
+}

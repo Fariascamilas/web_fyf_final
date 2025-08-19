@@ -1,0 +1,60 @@
+/* Animaciones para toda la web */
+
+/* Animación de entrada del header */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Animación de pulsación suave */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animación de aparición gradual */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animación para destacar un elemento */
+@keyframes highlight {
+    0% {
+        box-shadow: 0 0 0 rgba(103, 175, 81, 0);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(103, 175, 81, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 rgba(103, 175, 81, 0);
+    }
+}
+
+/* Clases utilitarias para aplicar animaciones */
+.animate-pulse {
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+.animate-highlight {
+    animation: highlight 1.5s ease-in-out;
+}

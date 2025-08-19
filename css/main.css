@@ -1,0 +1,38 @@
+/* ARCHIVO PRINCIPAL QUE IMPORTA TODOS LOS MÓDULOS CSS */
+
+/* Base */
+@import url('./base/variables.css');
+@import url('./base/global.css');
+
+/* Layout */
+@import url('./layout/header.css');
+
+/* Componentes */
+@import url('./components/modals.css');
+@import url('./components/floating-logo.css');
+@import url('./components/hero-effects.css');
+@import url('./components/about-effects.css');
+@import url('./components/enhanced-modals.css'); 
+@import url('./components/services-counter.css');
+@import url('./components/project-modal.css');
+@import url('./components/project-lightbox.css'); /* Nuevo componente para lightbox de proyectos */
+
+/* Secciones */
+@import url('./sections/hero.css');
+@import url('./sections/about.css');
+@import url('./sections/knowledge.css');
+@import url('./sections/security.css');
+@import url('./sections/testimony.css');
+@import url('./sections/questions.css');
+@import url('./sections/contact.css');
+@import url('./sections/footer.css');
+
+/* Utilidades */
+@import url('./utils/animations.css');
+@import url('./utils/responsive.css');
+
+/*
+ * Este archivo centraliza todas las importaciones CSS.
+ * Para modificar estilos, edita los archivos individuales
+ * correspondientes a cada sección o componente.
+ */
